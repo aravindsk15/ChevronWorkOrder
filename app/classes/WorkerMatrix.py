@@ -1,4 +1,4 @@
-from app.app import app.app
+from app.app import app
 
 class WorkerMatrix:
     '''
