@@ -22,9 +22,6 @@ class TimeSlot:
         """
         Removes timeslot from the current timeslot
         """
-        print("remove time slot")
-        print(self)
-        print(timeslot)
         if timeslot.is_contained_in(self) and self.is_contained_in(timeslot):
             return []
         elif timeslot.is_contained_in(self):

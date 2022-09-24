@@ -48,17 +48,12 @@ class Worker:
             if job.time_slot.is_contained_in(time_slot): 
                 #the list of new slots after spilt
                 new_time_slots = time_slot.remove_time_slot(job.time_slot)
-                print("split time slots", new_time_slots)
                 copy_slots = copy.copy(self.time_avail)
                 copy_slots.remove(time_slot)
-                print("time slot removed", job.time_slot)
-                print("curr slots", self.time_avail)
-                print("copy slots", copy_slots)
                 index1 = self.time_avail.index(time_slot)
                 for new_slot in new_time_slots:
                     copy_slots.insert(index1, new_slot)
                     index1 += 1
-                print("new slots", copy_slots)
                 self.time_avail = copy_slots
                 break
 

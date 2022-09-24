@@ -21,6 +21,8 @@ work_order3 = WorkOrder("Job 3", 1000, 1030, {'BSCS': 2})
 work_order4 = WorkOrder("Job 4", 1000, 1100, {'Architecture': 1})
 work_order5 = WorkOrder("Job 5", 1500, 1600, {'Michael is cool': 50})
 work_order6 = WorkOrder("Job 6", 900, 1000, {'BSCS': 3})
+work_order7 = WorkOrder("Job 7", 1030, 1200, {'Architecture': 2})
+work_order7 = WorkOrder("Job 8", 1100, 1200, {'Architecture': 2})
 
 work_orders.append(work_order1)
 work_orders.append(work_order2)
@@ -28,6 +30,9 @@ work_orders.append(work_order3)
 work_orders.append(work_order4)
 work_orders.append(work_order5)
 work_orders.append(work_order6)
+work_orders.append(work_order7)
+work_orders.append(work_order8)
+
 
 worker1 = Worker("Bob", 45050040, {'BSCS': 4}, [TimeSlot(900, 1500)])
 worker2 = Worker("Joe", 45050041, {'BACS': 2}, [TimeSlot(1030, 1100)])
