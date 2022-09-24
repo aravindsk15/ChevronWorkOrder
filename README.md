@@ -1,8 +1,10 @@
 # ChevronWorkOrder
 
-<<<<<<< HEAD
 Application that assigns workers to work orders.
-=======
-Application that assigns work orders to workers.
->>>>>>> 332cbfe7446c0430bf329c6c6e8dcc8f13681aa8
 
+## Running the application
+To run the application locally,
+
+1. Clone the repository
+2. Install requirements from 'requirements.txt'
+3. Run 'app.py'
