@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class="mt-5 text-center">Thank you!</h1>
+<div class="mt-2 text-center">We'll be getting back to you shortly.</div>
+<div class="mt-2 text-center">
+    If you would like to resubmit your form, click <a href="{{ url_for('run')}}">here</a>.
+</div>
+
+{% endblock %}

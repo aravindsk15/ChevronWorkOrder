@@ -1,3 +1,0 @@
-import TimeSlot
-
-# class Schedule:

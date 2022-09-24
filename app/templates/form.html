@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<header>
+    <h1> Worker Job Request Form </h1>
+</header>
+<form id="work_order" action="." method="post">
+    <label for="name" name="name">Name</label>
+    <input id="name" type="text" name="name"><br>
+    <label for="idw" name="idw">ID</label>
+    <input id="idw" type="password" name="idw"><br>
+
+    <p>Please enter your years of experience for the qualification(s) below.</p>
+
+    <label for="Q1" name="Q1">Qualification 1</label>
+    <input id="Q1" type="number" name="Q1" value="0"><br>
+
+    <label for="Q2" name="Q2">Qualification 2</label>
+    <input id="Q2" type="number" name="Q2" value="0"><br>
+
+    <label for="Q3" name="Q3">Qualification 3</label>
+    <input id="Q3" type="number" name="Q3" value="0"><br>
+
+    <p>Please check the time blocks below that you are available for.</p>
+
+    <div class="checkboxes">        
+        <input type="checkbox" id="0900" name="time" value="0900">
+        <label for="time"><span>09:00 AM - 09:30 AM</span></label><br>
+        
+        <input type="checkbox" id="0930" name="time" value="0930">
+        <label for="time"><span>09:30 AM - 10:00 AM</span></label><br>
+
+        <input type="checkbox" id="1000" name="time" value="1000">
+        <label for="time"><span>10:00 AM - 10:30 AM</span></label><br>
+
+        <input type="checkbox" id="1030" name="time" value="1030">
+        <label for="time"><span>10:30 AM - 11:00 AM</span></label><br>
+        
+        <input type="checkbox" id="1100" name="time" value="1100">
+        <label for="time"><span>11:00 AM - 11:30 AM</span></label><br>
+
+        <input type="checkbox" id="1130" name="time" value="1130">
+        <label for="time"><span>11:30 AM - 12:00 PM</span></label><br>
+        
+        <input type="checkbox" id="1200" name="time" value="1200">
+        <label for="time"><span>12:00 PM - 12:30 PM</span></label><br>
+        
+        <input type="checkbox" id="1230" name="time" value="1230">
+        <label for="time"><span>12:30 PM - 01:00 PM</span></label><br>
+        
+        <input type="checkbox" id="1300" name="time" value="1300">
+        <label for="time"><span>01:00 PM - 01:30 PM</span></label><br>
+        
+        <input type="checkbox" id="1330" name="time" value="1330">
+        <label for="time"><span>01:30 PM - 02:00 PM</span></label><br>
+        
+        <input type="checkbox" id="1400" name="time" value="1400">
+        <label for="time"><span>02:00 PM - 02:30 PM</span></label><br>
+
+        <input type="checkbox" id="1430" name="time" value="1430">
+        <label for="time"><span>02:30 PM - 03:00 PM</span></label><br>
+        
+        <input type="checkbox" id="1500" name="time" value="1500">
+        <label for="time"><span>03:00 PM - 03:30 PM</span></label><br>
+
+        <input type="checkbox" id="1530" name="time" value="1530">
+        <label for="time"><span>03:30 PM - 04:00 PM</span></label><br>
+
+        <input type="checkbox" id="1600" name="time" value="1600">
+        <label for="time"><span>04:00 PM - 04:30 PM</span></label><br>
+
+        <input type="checkbox" id="1630" name="time" value="1630">
+        <label for="time"><span>04:30 PM - 05:00 PM</span></label><br>
+    </div>
+    
+    <br>
+
+    <input type="submit" value="Submit">
+
+
+</form>
+{% endblock %}
