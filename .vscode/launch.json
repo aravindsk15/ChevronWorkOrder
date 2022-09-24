@@ -10,7 +10,7 @@
             "name": "Launch (Ikp3db)",
             "program": "${file}",
             "cwd": "${workspaceFolder}",
-            "pythonPath": "${config:python.pythonPath}"
+            "python": "${command:python.interpreterPath}"
         },
         {
             "type": "ikp3db",

@@ -15,4 +15,9 @@ class TimeSlot:
         return_val = (self.start_time >= timeslot.start_time) and (self.end_time <= timeslot.end_time)
         return return_val
     
+    def time_slot_length(self):
+        return self.end_time - self.start_time
+    
+    def __str__(self):
+        return str(start_time) + str(end_time)
     

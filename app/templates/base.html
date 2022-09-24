@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+    </head>
+
+    <header>
+        <h1> Worker Job Request Form </h1>
+    </header>
+    
+    
+
+<body>
+    <form>
+        <label for="name">Name</label>
+        <input id="name" type="text"><br>
+        <label for="id">ID</label>
+        <input id="id" type="password"><br>
+        
+        <p>Please enter your time availability blocks below, one by one.</p>
+        <label for="time"> Start Time Availability
+        <select id="time">
+            <option value="time1">09:00</option>
+            <option value="time1">09:30</option>
+            <option value="time1">10:00</option>
+            <option value="time1">10:30</option>
+            <option value="time1">11:00</option>
+            <option value="time1">11:30</option>
+            <option value="time1">12:00</option>
+            <option value="time1">12:30</option>
+            <option value="time1">13:00</option>
+            <option value="time1">13:30</option>
+            <option value="time1">14:00</option>
+            <option value="time1">14:30</option>
+            <option value="time1">15:00</option>
+            <option value="time1">15:30</option>
+            <option value="time1">16:00</option>
+            <option value="time1">16:30</option>
+        </select><br>
+
+        <label for="time"> End Time Availability
+        <select id="time">
+            <option value="time2">09:30</option>
+            <option value="time2">10:00</option>
+            <option value="time2">10:30</option>
+            <option value="time2">11:00</option>
+            <option value="time2">11:30</option>
+            <option value="time2">12:00</option>
+            <option value="time2">12:30</option>
+            <option value="time2">13:00</option>
+            <option value="time2">13:30</option>
+            <option value="time2">14:00</option>
+            <option value="time2">14:30</option>
+            <option value="time2">15:00</option>
+            <option value="time2">15:30</option>
+            <option value="time2">16:00</option>
+            <option value="time2">16:30</option>
+            <option value="time2">17:00</option>
+        </select><br>
+
+        <button type="button" id="addTimeSlot">Add another time slot</button><br>
+        <input type="submit" value="Submit all info">
+
+
+    </form>
+</body>
+
+</html>
