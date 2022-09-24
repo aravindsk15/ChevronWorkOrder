@@ -1,7 +1,20 @@
+* {
+
+}
+
 h1 {
     text-align: center;
 }
 
 form {
     text-align: center;
+}
+
+.checkboxes {
+    text-align: center;
+}
+
+.labels {
+    display: inline-block;
+    text-align: left;
 }
